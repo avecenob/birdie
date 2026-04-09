@@ -10,8 +10,14 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: Align(
+            alignment: Alignment.centerLeft,
+            child: Text('Birdie'),
+          ),
+        ),
         body: Center(
           child: Tile('A', HitType.partial),
         ),
@@ -28,7 +34,6 @@ class Tile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: replace Container with actual tile widget.
     return Container(
       width: 60,
       height: 60,
