@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './game.dart';
 
 void main() {
   runApp(const MainApp());
@@ -16,5 +17,18 @@ class MainApp extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class Tile extends StatelessWidget {
+  const Tile(this.letter, this.hitType, {super.key});
+
+  final String letter;
+  final HitType hitType;
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: replace Container with actual tile widget.
+    return Container();
   }
 }
